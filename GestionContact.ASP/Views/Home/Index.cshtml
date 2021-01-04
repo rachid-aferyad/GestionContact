@@ -1,0 +1,22 @@
+﻿@model System.Collections.Generic.IEnumerable<string>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">First Name - Last Name - Email - Birth Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item</td>
+            </tr>
+        }
+    </tbody>
+</table>
